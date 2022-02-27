@@ -1,0 +1,16 @@
+<iframe
+  #chess1
+  frameBorder="0"
+  width="530"
+  height="530"
+  [src]="ichess"
+></iframe>
+<iframe
+  #chess2
+  frameBorder="0"
+  width="530"
+  height="530"
+  [src]="ichess"
+></iframe>
+<div *ngIf="mate">Checkmate, mate!</div>
+<button (click)="reset()">Start new game</button>
