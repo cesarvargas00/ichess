@@ -20,9 +20,6 @@ export class IchessComponent {
       default:
         this.board.setFEN(event.data);
     }
-    if (event.data === 'reset') {
-      this.board.reset();
-    }
   }
 
   moved() {
