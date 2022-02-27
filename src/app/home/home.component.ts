@@ -26,7 +26,6 @@ export class HomeComponent implements AfterViewInit {
     if (event.data === 'mate') {
       this.mate = true; // FIXME: whenever its mate and the person reloads the page, it
     } else if (typeof event.data === 'string') {
-      console.log(event.data);
       window.localStorage.setItem('chess', event.data);
     }
     this.updateBoards(event.data);
